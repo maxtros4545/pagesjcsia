@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('10.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="#">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="#">CO FOUNDING PASTOR </a></li>
+                            <li><a class="dropdown-item" href="#">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Holy Scriptures</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+       
+        .header-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .language-btn {
+            display: block;
+            margin: 0 auto 15px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            color: #007bff;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+        .content {
+            text-align: justify;
+            max-width: 800px;
+            margin: auto;
+        }
+        .scripture-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 15px auto;
+        }
+        p {
+  color: white;
+}
+
+h2{
+
+    color: white;
+
+}
+
+
+.scripture-image {
+    width: 100%;  /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-title a:hover {
+    color: #007bff;
+}
+
+.card-img-top {
+    width: 150px; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p><a href="#">Beliefs</a> / The Holy Scriptures</p>
+        
+        <h2 class="header-title">The Holy Scriptures</h2>
+
+        <button class="btn btn-dark language-btn">ENGLISH</button>
+
+        
+
+        <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlibGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" alt="The Holy Scriptures" class="scripture-image">
+
+        <div class="content">
+            <p>1. The Scriptures Inspired
+                The Scriptures, both the Old and New Testaments, are verbally inspired of God and are the revelation of God to man, the infallible, authoritative rule of faith and conduct.</p>
+            <p>The Scriptures Inspired
+                The belief in the inspiration of the Scriptures means that both the Old and New Testaments were directly inspired by God and serve as His revelation to humanity. This doctrine emphasizes that the Bible is infallible (without error in its teachings) and authoritative (the final rule for faith and conduct).</p>
+       
+       <p>2 Timothy 3:15-17 (KJV/NIV)</p>
+
+       <p>KJV:
+        “And that from a child thou hast known the holy scriptures, which are able to make thee wise unto salvation through faith which is in Christ Jesus. All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, thoroughly furnished unto all good works.”</p>
+       
+        <p>NIV:
+            “And how from infancy you have known the Holy Scriptures, which are able to make you wise for salvation through faith in Christ Jesus. All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.”</p>
+            
+        
+        
+        <p>1 Thessalonians 2:13 (KJV/NIV)
+        </p>
+
+        <p>KJV:
+            “For this cause also thank we God without ceasing, because, when ye received the word of God which ye heard of us, ye received it not as the word of men, but as it is in truth, the word of God, which effectually worketh also in you that believe.”</p>
+
+
+            <p>NIV:
+                “And we also thank God continually because, when you received the word of God, which you heard from us, you accepted it not as a human word, but as it actually is, the word of God, which is indeed at work in you who believe.”</p>
+        
+        <p>2 Peter 1:21 (KJV/NIV)</p>
+  
+         <P>KJV:
+            “For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost.”</P>
+           
+        <p>NIV:
+            “For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by the Holy Spirit.”</p>
+        
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.language-btn').addEventListener('click', function() {
+            alert("Language switching functionality can be added here!");
+        });
+    </script>
+
+
+   
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_iUcl5f_EHC_3upn9CLeijXKbP9ygwzfaEA&s" class="card-img-top" alt="Bible Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title">
+                        <a href="#" class="custom-btn">Why is the Bible important</a>
+                      </h5>
+                      
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGPo2wqH4EfI-nRCYSAYhBsm6PgUNzmQv0Q&s" class="card-img-top" alt="Bible Image">
+                <div class="card-body text-center">
+                    <h5 class="card-title">
+                        <a href="#" class="custom-btn">Is the Bible Relevant to Attain Eternal Life?</a>
+                      </h5>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       </div>
+
+            </div>
+            <footer class="footer text-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Policies</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Get in Touch</h5>
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Phone/Email">
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="2" placeholder="Leave us a message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-center social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

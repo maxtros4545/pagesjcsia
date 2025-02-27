@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('10.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="#">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="#">CO FOUNDING PASTOR </a></li>
+                            <li><a class="dropdown-item" href="#">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="text-end">
+        <a href="index.html" class="btn btn-primary">
+            Back to Home
+        </a>
+    </div>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Father's House</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .hero {
+                background: url('image.png') no-repeat center center/cover;
+                height: 50vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="hero">
+            <div>
+                <h1>About the Father's House</h1>
+                <p>Our mandate is to raise sons</p>
+            </div>
+        </header>
+    
+        <section class="container mt-5">
+            <h2 class="text-center">OUR HISTORY</h2>
+            <h3 class="text-center text-primary">The Father's House Church</h3>
+            <p>
+                The Vision of The Father's House started in the place of prayer at a time in January 2003. Apostle Richard Udoh had just resigned from an executive position...
+            </p>
+        </section>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+
+
+    
+            </head>
+            <body>
+                <div class="container text-center py-5">
+                    <h2 class="fw-bold">You're Invited!</h2>
+                    <p>FBC offers morning and evening services on the Lord's Day, as well as midweek service. Come worship with us!</p>
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="card service-card bg-dark text-white">
+                                <img src="school.jpg" alt="Sunday School">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sunday School</h5>
+                                    <p class="card-text">Sunday<br>9:45 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card service-card bg-dark text-white">
+                                <img src="bible.jpg" alt="Morning Worship">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morning Worship</h5>
+                                    <p class="card-text">Sunday<br>11:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card service-card bg-dark text-white">
+                                <img src="worship.jpg" alt="Evening Worship">
+                                <div class="card-body">
+                                    <h5 class="card-title">Evening Worship</h5>
+                                    <p class="card-text">Sunday<br>5:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card service-card bg-dark text-white">
+                                <img src="service.jpg" alt="Midweek Service">
+                                <div class="card-body">
+                                    <h5 class="card-title">Midweek</h5>
+                                    <p class="card-text">Wednesday<br>6:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+            </html>
+            
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Statement of Faith</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                <style>
+                    body {
+                        background-color: #0a1931;
+                        color: white;
+                        text-align: center;
+                    }
+                    .card {
+                        background-color: #112d4e;
+                        color: white;
+                        border-radius: 10px;
+                        padding: 20px;
+                        margin: 10px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container mt-5">
+                    <h1 class="fw-bold">Statement of Faith</h1>
+                    <p class="text-secondary">How we see ourselves as believers of Christ Jesus</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">THE BIBLE</h5>
+                                <p>The inspired word of God and the supreme code of conduct for all Christians. (II Tim. 3:16)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">THE TRINITY</h5>
+                                <p>God the Father, the Son, and the Holy Spirit manifest themselves as distinct personalities in perfect unity. (LK.3:22)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">GOD</h5>
+                                <p>The unity of the Godhead eternally existing as Father, Son, and Holy Spirit. (Deut.6:4; MK.12:22)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">JESUS CHRIST</h5>
+                                <p>The true God and true Man who lived a sinless life, died for our sins, and rose again. (Jn.7:38-39)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">THE HOLY SPIRIT</h5>
+                                <p>The infallible interpreter of God's word, who regenerates and indwells every believer. (Acts 2:37)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="fw-bold">MAN</h5>
+                                <p>Created in God's image but fallen into sin, needing salvation by grace. (Gen.1:27; Rm.5:12)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+            </html>
+            
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Worship With Us</title>
+                <style>
+                    .hero-section {
+                        position: relative;
+                        background: url('image.png') no-repeat center center/cover;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+                    .content {
+                        position: relative;
+                        z-index: 2;
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <div class="hero-section">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Worship with Us Every Sunday</h1>
+                    <h4>Sundays - 8:30am to 10:00am, 10:30am to 12pm</h4>
+                    <p>The Father's House is a place for raising sons for the Kingdom. We would love you to be a part of us. Join in on our worship services and you’ll be blessed.</p>
+                    <button class="btn btn-danger" id="directionBtn">Get Direction</button>
+                </div>
+            </div>
+            
+            <script>
+                document.getElementById('directionBtn').addEventListener('click', function() {
+                    window.location.href = 'https://www.google.com/maps'; // Replace with actual location link
+                });
+            </script>
+            
+            </body>
+            </html>
+            
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Pastors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .pastor-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .pastor-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .pastor-card:hover img {
+            transform: scale(1.1);
+        }
+        .pastor-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h2 class="mb-4">Meet Our Pastors</h2>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUQDxAPDxAQFRAQFRUPDw8QDxUQFRUWFhUVFhUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGC0lHSUvLS0tLS0tLSstLS0tLS0tLS0rLS0tLS0tLS0tLSstLSstLS0tLS0tLS0tLS0tKy0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAYFBwj/xABCEAACAQIDBQUFBgQGAAcBAAABAgADEQQhMQUGEkFREyJhcYEHMpGhsRQjQlJicjOCwdEkNEOi4fAWc4OSstLxFf/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACIRAQEAAgMAAgMBAQEAAAAAAAABAhEDITESQRMyUUJhIv/aAAwDAQACEQMRAD8A4KCT7M3uDaOgh0WIwaI35oZaTfmMIiwyLMIa0D+Y/GEXDeJ+MMohVWDbArhR4wq4VYZVhFWDY6BGGXpCDDL0hQI8Gx0qmgvSM1JeghmkWgtbQeHQCqlus0L/AMOZ+j/ETzmgf+HBVMEqPunyEWE/vHo+6fIRYT+8VQ1L3j5ydX3/AEkaXvHzk6vv+kwpYj8PpL2D92UcR+H0l7B+7Gw9Jn4MYjHMYyqVRAjxhJSzmqBEgRCmQMIBEQNQZiWSJXrGxF4tNj64uNwbFWFr3vpKdZSaWYsQPnNG1jK1WiDqAZO4rTJn6jdzi6C8jUW/C3hOjicAOEquV8pTbDMqAHO2WUW7NKig7kEy94Syg7kEV70MrWIFYoUiKORnkEOgg0EOgiAmgh1EgghlEUUlEKokVEIomFNRJgRlEkIBPHjREwCE0G0mhDPwAji1zmW3m3rSgxpUCtWquTNmaanp+ozetppKR+8Tzmhf+H8Z4TW2niK54nqv6OKaj0lrCVqy2IruAeXG5PxBmymj4PbqPunyEWE/vPPtjb61aQ4K69qmnFkKn9jN3sjFJWQVKbBlYHMfQjkYig9L3j5yVT3/AEkaXvHzkqvv+kAp4j8PpLuD92UcT+GXsF7kfD0mfg5iMRiMqlURHjCSlo5qiZEyZkTCCBEG6wpkWmZSq0h5eUruGHj5y+4ld1mZUar1BEGxBlh1lapRHlBqGmVAq0wZVanZryy6sPHzlepV6gj6RLgpOQzCKNxxptNuOIghkEGkOgkxiaCGUSCCFUQCIohAJAQgmY4kpER4BPA16wQXNznawFzeEmR3523SROxVi1Qm7Cm/Dw20DkZjyHSDWzY2b7Ut6d4+C4oMVd+JSdGVRkfW4I9Jh6Y8LyBYk53Y+phqa9SfTSVk1C27q7hlv/pqB4gS7TrE24hp0Eq0Fta+cuYVeLnkMpLKLYu3TqqQDwqPQTQbtbTFF8rcL5MunqPGZMVLCwh8K7XBF5CY6rq+Us7es0DdrjQkGTq+/wCkpbDrcdNW6gfGXanv+krlNXTnl3EsT+H0l7Be5KOJ5S/gvchw9Ln4OYxjmIyyNREeIR5aOdEyJkzImYEDImTMiZmBcQLw7wLwCrOYJpQ3gx/YLxecwuz99cU1WzcDKW4bWtkTaDY6ehOJWqLLRzF+sDUEIKnBFCERTM4SCHQQNOWEkFhEEKog1hVEApgSYkRJCATiPFIV6qopdiFVQSScgBMLi72baGFoMVP3rgrTHPi/N5DWeT16pcszElmJYk6knMkzpby7V+11mqhSimyAE3PdHXQXuchOR1lcZotpqbHkZ2Nk0gzd/MD4XM5WGS5nfwlPhUdYvJej8U72NiKSi9siRcW0t4yOAbunkRCV7EAgm4yIPSVaZIzk8e4tn1drNWuRA065HeRm4rjRr/EQlLPXOFFGmBe2dxNemktel7j1qj0uJwAuQGeZOpy6ZzQ1PfmV3Cx4KmgdV74z/DoRaamr78TLLfY/HXSWJ/DLH2paVBqjaKCf+JXxPKc/eitw4PhAuXYC1xcgd4266Q43Ww1uyO1snH9vT7S1s7fCXTMjs7b9HCYagjq3HVBYKMrDiIubzU0a6uLqwOhyIJFxztK43afLjq266EEeMJKdEcRjImSkTMyJkDJmRMzBNAvDNAtALI79m1KeZ7GH3y+Lr9Z6T7QD9zPO930vWT96/WJ9qTx7FbKBqCWGEBUjpq5ijmKZnCSGSCSGSc6wyQog0hVmFKSEjJCATzL+0TGcGE4LG9ZlW4OQ4TxfO01M849peJbt0pk9xaauB0YlgT8BDj6zGO+ngLfXP5xmFhEhva/Ik/T+wkuAsctBlf6ypWj3X3Xr4mma1JqWR4QruVY26ZWHrLeJ2fVoNw1qbU2/UMj5HQ+k5GytpVcK4qUH4WGRBzRh0ZeYnrW722qG0qJVkXiW3aUn7wU/mF9V6GLcPkpjn8XmVdresqu2WWek3e8u4pINTBtfn2Tn/wCDf0Pxnn1ZWpkqylXU2IYEEdQRBOO4+jeSZeLOHq525Q1Rwe7bOUKS/iY5QzcSsCgLMxAHUnkBBcWx5NdN/uDiKFCjxsgWq1RkDWbiZRwkk30AJtl08Jrqe1KLg1OMKgIS7kLdjoBnnMS+x8ZSo0qjqXKK6Mid5qaG5GQ195r20ynN2tgsZiKFOnQoVH4HeobDhOaqAbtYHTSD4TKb2N5LLrT1N66PYoyt+1gfpMHtnbL18Q6i3Z0GaknPvA2dvl8ph8fTxuE4ftFOvQ4vdLaE+BBIvBU9u1dL8ROfuXa/XKL+K66PjzY43djbY7FJV4KTWUBFXjb3rgk2HS9/rLGw94fs+auhYkowKE2UHlY5jnMxsjadKtWCYr7pAGJZbhugFmuNSPhNPh9h4Z+9SxVJwLn7wGkwHPvKWX4kRPhcVvzYZ9PUcLU40VvzKrc+YvDSjsnHUa1JTQq06qhVF0YNoBrbSXp3R5OXpSJkjItCCBkTJGRMAhPMxvBvXQwbhKvFdtOEXmneeRe0/B1GxKsqMVtqBcRaaaXN7N4aOJo2pE36EWMy+7bff0wcu+JXBGmnnEAQ3EDYjMERfs72q+UC88xob04ulpU4x0cXnoGxsY1fDpVYAM4ubaRpSWLBEURihBwkh0gEh0nOuMsIsgohFgFISQjASQE2x0Qnj29eM+0Yyoy8RAPAA1slTLlyvc+s9P3jxYpYaoRVSjUZHFMuQCXtot9TPHxlkPXxj4QKJh8Ko94g+A0/5ls0VtllbpKF4RKhlNBLE3X4iG2bj6lCotai5R15jQjmrDmD0kOK8iwANzocr+PjDptvat29tpjaAqLkw7rrfNX6eXMGZX2j4GiWQ3Pb2JPABxmkOvXna/jMlsDa9TB1hVS5U911vYMnTzHIzQbw0Kla2NoVDUWoLnQ2X8oHha0be4TWqLg9zaOLofaMHXdUsb06yB6iuBmtwR/XWcjZuxqrV1VlIKsBY31Ggy0l3dbb5wTEuvFTdQHUEh7BjZlXQ273S89M2NiqNZe0osrg6kag9DzBkM7cb/xeYTIfCAiwOotfO+cnV9+Kl73rFU98znXD2lhkqr2dVFqIwsVcBlPoZ43tXZg2djbqzL2dUNSV1bv0CLkh9CMynM5T2rEaiZb2qYWm+zkdh96lZBTPPvXDj/2gn0EpxWyo8uMsZTCY5Kwy973Wvn4g35zqbM2VSq1AjUkJZgDkAbc8xMDh3qUTxUj5qf8Auc9A9nu2KFfEr2jrSdQeFWNuOppYH4m03w/9deLzmlw1lO2ypblYSixq4PtMHXtk9KpUZR4NTYlWU8wfkbGXtl7WY1Ps2KVaWKALDhJ7KtTH+pRJ18V1XxFiesJU2rs2niafA91KkOjoeGrTqDR0bkR8xcHIzseXtbMYzk7I2lU4zhcXZcUg4gyi1PEUgbdrT6HQMv4SehBnWMwIGRMkZEzCE85+Owa1PeAPnOi0C4gbW3l3tB2UlJA6KAb6jKZTZGGao6Jc942noHtNH3A85ktzkviKV+sW3eR8ZrHp2P8AwS7C4qD1E1uycEaFBKRNygtcToBLSLwl3fsAxRGKZnBSEVu8B1MEsmPeXznPXRPV0qRJreECgkA6W/pOXimKMQMx5mItenSz6xeo+M5Hbt0HzjHEN4fCbQfKMz7Sa6mrSQZuiuxz0DlbD/aZjbTobfxBq4mo5OjFB5J3cvhOYXvpOnGaiGV3UibRwxkQJMRgTRobiuM4CSQzMmjfhP8AKeo6ec7e722jQJpufunzHPgq8mHgbAEdPKcJluLf9vFSqcQsfeGv94Ni1OBw3bVEd7Cmi2YmwHBqf6/Gc7Yu16uDrN2blezZkJ5EAkd4c1NvSWdg7VHD9lqUwwc2Vlco4LZWubgjwtB70bNNKp2yj946i9g5+V/ODc3o+rr5PU92Ntpi1vktVbcag9fxL1UzrVPfni27O2DhMRTqXLJexGhNM6rf/uYE9Q2PvNhsXVKUi61AvHw1FseG9iQQSDqJDkw1evFsMtx28RqJ5x7ZNoZYbDA6CpiG63PcT6VJ6PiNRPF/ahUY7Re+iU6Kj9vDxfVjNxfsXl/Vy9mbaakhRl7QG+bN3gDa40z0+ZlWpi+MEsi9plZk7lrdRo1/Q+MqCSnRpzPQtzvaVVw/DRxvFWo5APrWQef4x4HOevbN2hRxNMVaFRatNtCp59CNQfAz5p2Xgmr1koqLtVdKYyvYuwUHyF7+k9O2huljtlVDitk1Klalq9Fu9UsP0jKqP9w5XjTcJlp6FtnZgxCABjTq0z2lGqBdqdUDI+IOhHMEiB2LtM1gyVV7LE0SErU+QY6Oh/FTYZg+moM5G6W/eGx1qb2w+J07Nzkx58BOv7Tn5zqbc2c7FcRhrLiqIIXiySrT1ahUP5TyP4TY9QSXz10zImVdl7RTE0+0S6kEo6OLVKdQe8jjkw/sectGYA2gWhngmgosN7TV/wAOPOZXcpb4il5n6TWe03/LDzEzG5C/f0vM/ST+1Z49MaBaHcQDR0wTFEYpmZ9DJL76+cGhhEPeX1+k5q6J661M5iU8Ul7y1TOY8oJ+cTa+lE08h5yvtGr2VF6tv4as3qBlOiVtbzlDeB6a4WqavuFGU21u2QA8bkR5UrHk1R+I587k+ZjCOqSRIE6UkbmPbxkeLpHAmBIG0ZGtEzZSCmZllagjMo1GREHw9IgSJtDsbi9D/WaPBbRfEoyVLPUVbniyL0xkcxloecy3Hzl7ZOL7GslTkDY/tbJvkYuU63PT4Zaur5fQ61IrdQbhbOh6rNf7MnT7a7OQH7Lgp3IF7sCwHU5fWZrbCdnWAHuniZf2sdPQ3+MrU6rU2Dq3CyEMCLixGYM1m5Y0vxun0FiNRPFvaRtJcRj24LcNBVoXFu8VJLG41sWI9J3tkb/gYWquIrceJQMaJK5uSDwgkC1weZnm9yDn89byfHhZbs3JlLJpNNPKSGkZDnJqM/OWRbr2P7K7bG9sR3cMpf8A9RwUT5cZ/lntwmN9lex/s2AV2FnxJ7Y/s0pj4Z/zTZR0be2R3u3Dw+OvVp/4bFa9og7rkadoo1/cM/PSZrZ292N2XUGE2vTd6eiVl77FRzVv9QDx7w+U9SMqbU2dRxNM0cRTWrTbVWHPkQdQfEZwaGVw8RZiNo7OZa/EAK1Omw4cRSXp+WsvIm1/dPK3XwGNp16a1aTcSOLg2II6gg5hgciDoRPOtobs4/ZFQ4nZbvXw+r0m77hf1IP4g8RZh8TLWwd56eIc1sGBSxT518G7AU8QRq9BzYCrlztfQ/mA2OnoDQTQOz9o08QnHSJyJVlYFaiONUdTmrDpDNMDEe0//LD9wmc3I/jUv5vpNF7Uf8qP3CZrcT/MU/2tJ/6U/wAvTWlepDtAVIxQDFGMUzM6hhEPfX1+kCpk6Z76+s56vj666e8JDnEh70YayVdCbLkJlPaHXVcOtPPiqOD4cKZm/qVmwtcCeTb17WOKxBI/h0700HgDm3qR8LSvFN1Pk6jiMx5fGRC+snaNxjlnOhzntGJjWJ1yjMwXTMzCZznbp9YpFRJiEDo8NrAER1aZk2SMh5Qim8jUTmJmX9ptx06NW1jnTaxy4lA1HI5X9RK1bTzEnh6imlURssuNb/nXl6j6SBzX0MEPld9qVvnEb88/rIj6SZMxDjkZ3d0Nk/a8dRoEEozcT/8AlqCzfEC3rOEuh+M9S9jOzw1WtiDrTSnTXzqXJPwT5xp/Qer01AAAAAAAAGQAGgEnGEeMkUYx5EzAiZjd7dw6GMJrUSMNive41Hcdte+o5/qGfnNkZAzaGXTxr/8As43AVwuNVqeIUBVr2LrWpjRKtv46dGHfXxzE9G3f2/RxtPipkB1ydOIMVPUH8Snk39cp0NrbMo4qmaWIprVpnk2oPVSM1PiJ5ftjdHGbMq/a9nu9WmlyRa9VV5q6j+IniM/DnENuV3val/lR+5Zm9wm/xKD9LSe829VLH4EcI4KyspdNR4lTzHzg/Z6P8SP2NFnp/p6WxleoYZzK9QwlCJjRiYpmZtDJ0j3x6wCtCUD94PIznq+Prs0zn6GMpkaZz9IyGSroirvPtM4bCNUX3z3E/e2QPpmfSeRX/wD2bL2k4xi9Kh+BVNU+LElR8AD8Ziy1p08U1ihyXeSTD184NuLqPKIXOpt5Qqr5/EyiYKNyOsjqYWshAvr9YFYQTEkI0QmZMGMVijiZjKbQyNeDitaZk2yN+RyMt0qd6IPQOfgJUY3E7+72zTihTw4bgNVXXi4eK2RN7XF9I+Gu9/wuW+pGVpnOTH/M6u8m6+JwD2rLdD7tRLmk3hf8J8D85yVz89ZOXZ7NJ0hcz3v2X7JOHwIdrh8S3bZ8ksFpj4Di/mnj+5mxTjcZToZ8B79QjlSXNvK+Q82E+jVUAWAAAsABkABkAIbetBJ2mI4kRJCPEaUYx5EwgiZAyZkDAyDQLwzQDwUYxO9u5NKuTXw1qGIzJsPuqh/Wo0P6h63mS2DjDs7FWxtJ6ZsRcZi35hb318R8J63UnK2rs2jiE7OugddRfJlPVTqp8RF0eUSjiUqoHpsro2YZTcGDqGec4/DYzY9XjosamGc8xdD+lwNG8Rry6TUbD3noYxQFPZ1edNiL/wAp/EIB06xMeDJimBmVMLhj94PIyuphMKfvPSc98Xx9dhGz9I9MwVNsz5R0MlXRGJ9o6/f0m5Glb1DG/wBRMkZ63t3ZFPF0hTfusLlG5q39uonlu0tnVcNUNOsvCw0OqsOqnmJ08WUs0hyY2XauJMNBXivKpLAN5B6PTKQEmCZhBItkZISwM9c5FqH5T6GZtBRxGII1FogZgTjydDDu+gy6nIfGdGjsVrXdgF/TnEueM9p8ePLLyOWwym39nNQGtQFh3Uqrl/OfjmZQo4XBUl4qycYGvE73PgoBGcl7Oq4GJpWyHHVXM3Oakj6x8MplMtfyhycdwuO79x69ikDWDAMDqCAQfQym+5OzK6A1MHSBve9Liot8aZF4sTtbDhwhrUw3TiGvnpO/gz3BObj9X5PFTYm7+EwSkYWitLitxG7M7W0u7EkjwvOp/eRY2vOdjd4MJRv2mIpgjkrcbfBbmVtk9Q1fp0kkxMZivaFhlypU6tXxICL88/lOZW9o9Wx4MPTHi7MfkLfWH8+E62T8Od+no0Yzx7G+0HFtl29Ol4UkUH53MFsfeuotbtatTFVksVP8VgCdCAcuU055brTXgsm9vUsZt3C0qy4epWRa78PCmZfvZLkBlfxhquPoqeF6qIxzAdghI8mtMPhtu7PxBNVqd6ikXd8MS6sMx3gLjT5Tq4vaeAxfD2lakWS4F3NNhe1+nQazpx+F/wBIZTKfTTdoGzUhh4EEQLmcvY9HDUQRRYMGIaxqI9jpdefT4TqMQeZHpDlx/wAuwmX9AqGVqktVKfiPmJVqoQLkZaSVxsPLFPF0lqKUdQ6MCCrC4Inmu8O6ow5NSkzJTvdXzPA3Jats7dKg059Z6XUMqVwCCCAQQQQRcEHUGJTyvKBvbjF7prOCMiGROLLrcXjTX1d3GDEUq4Sn+FWo06hUdOJsyBy6Cwig0b5QJTDYQ9/0/rGikKrj66lJtfKOjRRSVXi0p0gdpbPpYhOzrIHXl+YHqp5GKKDeh9edby7sPhPvFbtKBNgTYOp6Ec/MTgRRTs48rcd1zcmMl6ODJXiilEzgyYaKKARKal8gL+c6WI2TTpHgPEXQniPFdDcLYAWytnnc3v4RRSXLbJ0txYy3sUEaEXEnxdCQIopCR0bKozGwuD5i8NhXenUBIFgLjhsM+sUUF6Gf1f2liw9lNIIy2JsVzJ10GkOm9+Ko0hSWt2aLpZQWt+4gmKKLM8r1suWM3a4+L3jer79WvWP6nYj/AHGVvtTnRVXzJPyEUUOWMhZaj3zq5H7QBEuGB14m/cxMUUU2kxSRdBbymx3KzWpnzT6GPFKcP7wnJ+taajhlNyQp5ZgaQdXBqcioI6G9vheKKd2o5Fdth4ds+zRT1VVU/G15XbZfAfu6tWn+2rV/+0UUHxjbRwmHx/agLjzwE6VaQqEDpe+c79N6gUrUcVL2N+zCZjyMUUO9Ql9AqGVarRRRazlYrD1GclanCDbLPpGiii6F/9k=" alt="Pastor">
+                    <div class="pastor-info">
+                        <h5>APOSTLE (DR.) RICHARD UDOH</h5>
+                        <p>Senior Pastor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWJcK7iA1Cz9ODTILcKQqeeGtabiuq8Od_w&s" alt="Pastor">
+                    <div class="pastor-info">
+                        <h5>APOSTLE (DR.) RICHARD UDOH</h5>
+                        <p>Senior Pastor</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor3.jpg" alt="Pastor">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor4.jpg" alt="Pastor">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor5.jpg" alt="Pastor">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor6.jpg" alt="Pastor">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor7.jpg" alt="Pastor">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pastor-card">
+                    <img src="pastor8.jpg" alt="Pastor">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pastorCards = document.querySelectorAll(".pastor-card");
+            pastorCards.forEach(card => {
+                card.addEventListener("click", function() {
+                    let info = this.querySelector(".pastor-info");
+                    if (info) {
+                        info.style.display = info.style.display === "block" ? "none" : "block";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+       </div>
+
+            </div>
+            <footer class="footer text-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Policies</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Get in Touch</h5>
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Phone/Email">
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="2" placeholder="Leave us a message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-center social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

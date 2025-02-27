@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('10.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="#">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="StatementOfFaith.html">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="#">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="#">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="#">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+
+  
+        
+        <style>
+            .content-section {
+                background-color: #66d9ff;
+                color: white;
+                padding: 50px;
+            }
+            .content-section h2 {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfQIEYFyotFYsn5H62ZBNQb1z9QyGGJ5Vxg&s" alt="Dream Groups" class="img-fluid">
+                </div>
+                <div class="col-md-6 content-section">
+                    <h2>DREAM GROUPS</h2>
+                    <p>A Dream Group is a midsized community that is being spiritually transformed, growing as a spiritual family, finding identity and purpose. Join a Dream Group today!</p>
+                </div>
+            </div>
+    
+            <div class="row align-items-center flex-md-row-reverse mt-4">
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXZ7Ld4XZd3wVvzy67smsRT8YZhPh0DlND3Q&s" alt="Serve" class="img-fluid">
+                </div>
+                <div class="col-md-6 content-section">
+                    <h2>SERVE</h2>
+                    <p>We exist to lead people into a growing relationship with Jesus. We live that mission out through helping people to encounter God, grow together and join the mission. That is our process. Joining the mission at Dream, is easy. Simply click the learn more button below.</p>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+
+    
+        <style>
+            body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    font-size: 45px;
+    color: #0077cc;
+}
+
+.feature-box h4 {
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.btn-learn {
+    display: inline-block;
+    border: 2px solid #0077cc;
+    color: #0077cc;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-learn:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+
+/* Style for the accordion button */
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+    background-color: #e2e6ea;
+    color: #000;
+}
+
+/* Style for the active button */
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style for the accordion body */
+.accordion-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+/* Style for the image inside the accordion */
+.accordion-body img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth transition for accordion collapse */
+.accordion-collapse {
+    transition: all 0.3s ease-in-out;
+}
+
+
+        </style>
+    </head>
+    <body>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="feature-box">
+                    <i class="fas fa-leaf"></i>
+                    <h4>I'M NEW</h4>
+                    <p>We are men, women, children, but most of all we are family.</p>
+                    <a href="your-link-here.html" class="btn btn-learn">Learn More</a>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-box">
+                    <i class="fas fa-user"></i>
+                    <h4>DREAM GROUPS</h4>
+                    <p>Looking for somewhere to be a part of? Find your community today with a Dream Group.</p>
+                    <button class="btn btn-learn" onclick="window.location.href='your-link-here.html'">Learn More</button>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-box">
+                    <i class="fas fa-smile"></i>
+                    <h4>DREAM TEAM</h4>
+                    <p>Be a part of building bridges in our community that connects people to Jesus! Join the Dream Team!</p>
+                    <a href="your-link-here.html" class="btn btn-learn">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-box">
+                    <i class="fas fa-heart"></i>
+                    <h4>ESSENTIALS</h4>
+                    <p>Interested in learning more about the mission and vision of Dream? Essentials is every week! Sign up today!</p>
+                    <a href="your-link-here.html" class="btn btn-learn">Learn More</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center fw-bold" style="color: white;">OUR BELIEFS</h2>
+
+        <div class="accordion mt-4" id="beliefsAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        THE BIBLE
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>Which consists of Old and New Testament, is the inspired word of God and the supreme code of conduct for all Christians. II Tim.3:16</p>
+                        <img src="https://d2ctxc0nlnzcqn.cloudfront.net/wp-content/uploads/sites/102/2021/01/12055457/Q0428_m.jpg" alt="Bible Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        THE TRINITY
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        God the Father, the Son and the Holy Spirit manifest themselves as separate but yet distinct personalities and in perfect unexplainable or mysterious unity and harmony. LK.3:22.
+
+GOD: The unity of the Godhead eternally existing as one officiating in three offices – Father, Son and Holy Spirit. (Deut.6:4; MK.12:22; Rm.1:20; John 10:30, Isa.9:6, II Tim.3:16).
+                   
+JESUS CHRIST: The true God and true Man. He lives a perfect and sinless life. He died on the cross, a sacrifice for our sins according to the Holy Scripture. He rose from the dead and ascended into heaven where He is sitting at the right hand of the Majesty on High.
+
+ 
+
+THE HOLY SPIRIT: The infallible interpreter of the infallible word, who regenerates, indwells every believer, baptizes and seals all true believers in Christ and fills those yielded to God. His ministry is to glorify Christ in the life of the believers. (Jn.7:38-39;16:7; Acts 7:35)
+</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        MAN
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        Was created in the image and likeness of God, but in Adam all mankind fell into sin with the result that all men are sinners, helpless, and sinful in themselves, apart from the grace of God. (Gen.1:27; Rm.5:12; Eph.2:1).
+                    </div>
+                </div>
+            </div>
+
+
+
+          
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      SALVATION
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">Is received by faith alone in Christ, apart from works, Christ died as a substitute sacrifice to redeem us from our sins and rose again. His shed blood and His resurrection, provides the only ground for justification and salvation. (Rm.5:6&8; IPet.3:18; Eph.2:3-8; IICor.5:21).
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        RESURRECTION
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">Is the resurrection of the crucified body of Jesus Christ; that body was raised from the dead according to the scriptures, and that He ascended into Heaven and sits at the right Hand of God as the believer’s High Priest and advocate. (Lk.24:39; Acts 1:10-11; Eph4:10-12; I Cor.15:3-4; Rom.8:11; Heb.7:25; Heb.1:3; 8:1-2).
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ASSURANCE
+
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">Is the confidence that God gives us through His word that without any iota of doubt our sins have been forgiven when we trust Christ and accept Him as our personal Lord and Saviour. (Rm.8:1; Heb.8:12; I Jh.2:12; Isa.1:18 & 43.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ETERNAL SECURITY
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">God will keep forever, by His power, all those who have accepted Jesus Christ as their Saviour and have kept their Faith in Christ. (Jh,5:24;10:28; Eph.1:1-12; Heb.10:14; Rm.8:1; IPet.1:25)
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        SANCTIFICATION
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">There are three aspects to sanctification viz:
+
+                        POSITIONAL SANCTIFICATION:  Possessed by every believer from the moment of his conversion regardless of his spiritual condition. This concerns his spiritual placement and position with God and his state or perfect standing in holiness. (Acts 20:22; ICor.1:2; 6:11).
+                        
+                        PROGRESSIVE SANCTIFICATION: The daily growth in grace becoming in practice more and more set apart for God’s use (Jh.17:17; Eph.5:26; IPet.1:16).
+                        
+                        ULTIMATE SANCTIFICATION: This is that aspect which is related to our final perfection, attained only when we are fully and completely set apart to God in Heaven. He will remove us from the presence of sin and present us faultless before the presence of His Glory. (IThess.5:23-25; Phil.3:20-21; IJh.3:2-3)
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        PERSONAL RETURN OF CHRIST
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>In the personal return of our Lord and Saviour Jesus Christ, His coming again is the Blessed Hope set before us, for which we should be constantly looking forward to. Our citizenship is in Heaven from where we look for our Saviour the Lord Jesus Christ. (Acts 1:11; 1Thess.4:16-17, Jh.14:1-3; Titus 2:13; Phili.3:20-21).</p>
+                        
+                        <!-- Image added here -->
+                        <img src="https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/prod/2021/01/5-Things-Jesus-Return-1-e1610136390446.png" alt="Jesus coming in the clouds" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        THE CHURCH
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>Embracing all true believers globally, it is the body and bride of Christ, formed by the baptism of the Holy Spirit. The local church is intended to be the local organism representing the body of Christ, and should be composed only of true believers. (Eph.1:22-23; ICor.12:13; Phil.1:11).</p>
+                        
+                        <!-- Image added here -->
+                        <img src="https://i0.wp.com/www.christiancrossministries.org/wp-content/uploads/2018/10/01-JSCIA-Worship-Center.jpg?fit=1240%2C912&ssl=1" alt="Jesus coming in the clouds" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ORDINANCES OF THE CHURCH
+
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>We believe in the ordinance of the Church as established by the Lord Jesus Christ. These are: The Lord’s Supper and Water Baptism that is to be observed by the Church during this present age. They are, however, to be regarded as means of salvation. (Acts 3:39; 8:12; ICor.11:23-26).
+
+                            WATER BAPTISM: By immersion in water only for born again believers and was instituted for the purpose of outward testimony (Mk.16:15; Matt.3:13-17; Acts 8:38-39; Rm.6:3-4).
+                            
+                            THE HOLY COMMUNION: It was instituted by Christ and commanded to be followed by the Church. It is a Christian’s duty and privilege to remember the Lord’s death until He comes. (Matt.26:26-28; ICor.10:14-17; ICor.11:23-25)..</p>
+                        
+                        <!-- Image added here -->
+                        <img src="23.jpg" alt="Jesus coming in the clouds" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        CHRISTIAN LIFE
+
+
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>Christians are called to a Holy life of service and testimony in the power of the Holy Spirit which service includes the propagation of the Gospel message to the whole world. All Christians will give account of and receive reward for their faithful service at the judgment seat of Christ (IPet.1:15-16; Acts.1:18; IICor.5:5-10, ICor.3:12-15).
+                        <!-- Image added here -->
+                        <img src="22.jpg" alt="Jesus coming in the clouds" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        MARRIAGE
+
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#beliefsAccordion">
+                    <div class="accordion-body">
+                        <p>We believe that marriage is the most honourable relationship, institution and covenant a person could enter into. It is a God ordained institution between a male and a female. Matthew 19:4-5.
+
+                            Its high regard for the laws of God, its benefits and obligations are fully and clearly set forth in the Holy Scripture. It is so Holy that Christ compares it with the mystical union of Himself and the Church. (Heb.13:14; Eph.5:22-23).
+                            
+                            Also, we must take precaution and care to see it also as a civil institution. For it to be legal, it must be performed by a recognized licensed or an ordained minister of God.
+                            
+                            
+                        <!-- Image added here -->
+                        <img src="https://i0.wp.com/www.christiancrossministries.org/wp-content/uploads/2018/10/01-JSCIA-Worship-Center.jpg?fit=1240%2C912&ssl=1" alt="Jesus coming in the clouds" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+  
+    
+
+    
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the button inside the "About Jesus" accordion item
+        let aboutJesusButton = document.querySelector("[data-bs-target='#collapseTwo']");
+
+        // Automatically click the button after 2 seconds (for demo purposes)
+        setTimeout(() => {
+            aboutJesusButton.click();
+        }, 2000);
+    });
+</script>
+
+
+</body>
+</html>
+
+       
+   
+    
+       </div>
+
+            </div>
+            <footer class="footer text-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Policies</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Get in Touch</h5>
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Phone/Email">
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="2" placeholder="Leave us a message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-center social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
